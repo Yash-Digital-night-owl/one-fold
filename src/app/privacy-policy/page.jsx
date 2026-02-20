@@ -1,11 +1,9 @@
 "use client";
 
 import React from "react";
-import Layout from "@/components/Layout";
 
 export default function PrivacyPolicyPage() {
   return (
-    <Layout>
       <div className="p-4 lg:p-8 min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
         <div className="mb-8">
           <h1 className="text-2xl lg:text-3xl font-bold text-white">
@@ -20,8 +18,8 @@ export default function PrivacyPolicyPage() {
 
           <Section title="1. Introduction">
             <p>
-              Welcome to <strong>OneFold</strong> ("App", "we", "our", "us").
-            </p>
+  Welcome to <strong>OneFold</strong> (&quot;App&quot;, &quot;we&quot;, &quot;our&quot;, &quot;us&quot;).
+</p>
             <ul className="list-disc pl-6 space-y-1 mt-2">
               <li><strong>App Name:</strong> OneFold</li>
               <li><strong>Company Name:</strong> OneFold Technologies</li>
@@ -71,18 +69,10 @@ export default function PrivacyPolicyPage() {
               OneFold is strictly for users aged 18 and above.
             </p>
             <ul className="list-disc pl-6 mt-3 space-y-1">
-              <li>
-                We may request a government-issued ID to verify that a user is above 18 years of age.
-              </li>
-              <li>
-                Government ID is used solely for age verification and fraud prevention.
-              </li>
-              <li>
-                ID information is securely processed and not publicly displayed.
-              </li>
-              <li>
-                Accounts failing age verification will be permanently removed.
-              </li>
+              <li>We may request a government-issued ID to verify that a user is above 18 years of age.</li>
+              <li>Government ID is used solely for age verification and fraud prevention.</li>
+              <li>ID information is securely processed and not publicly displayed.</li>
+              <li>Accounts failing age verification will be permanently removed.</li>
             </ul>
           </Section>
 
@@ -181,18 +171,12 @@ export default function PrivacyPolicyPage() {
 
         </div>
       </div>
-    </Layout>
   );
 }
 
 /* Reusable Components */
 
-interface SectionProps {
-  title: string;
-  children: React.ReactNode;
-}
-
-function Section({ title, children }: SectionProps) {
+function Section({ title, children }) {
   return (
     <div className="space-y-3">
       <h2 className="text-lg lg:text-xl font-semibold text-white border-l-4 border-orange-500 pl-3">
@@ -205,12 +189,7 @@ function Section({ title, children }: SectionProps) {
   );
 }
 
-interface SubSectionProps {
-  title: string;
-  children: React.ReactNode;
-}
-
-function SubSection({ title, children }: SubSectionProps) {
+function SubSection({ title, children }) {
   return (
     <div className="pl-4 border-l border-gray-700 space-y-1">
       <h3 className="text-white font-medium">{title}</h3>
